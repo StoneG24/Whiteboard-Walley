@@ -4,50 +4,6 @@ from tkinter import *
 LARGEFONT =("Verdana", 35)
 MEDIUMFONT=("Verdana",20)
 
-# creates the connection for serial transmission
-# bluetooth = serial.Serial("/dev/rfcomm0", baudrate=9600)
-
-
-# class to implement bluetooth controls from the buttons.
-# dropped due to time and countless errors trying to get bluetooth/serial connection to work.
-
-# class Process():
-#     def __init__(self, button):
-#         self.button = button
-
-#     def button_process(self, button):
-        
-#         # assigns the value to be sent serially to the arduino
-#         # based on the button pressed
-#         try:
-#             if button == "Clean":
-#                 value = 1
-
-#             if button == "Up":
-#                 value = 2
-
-#             if button == "Down":
-#                 value = 3
-
-#             if button == "Left":
-#                 value = 4
-
-#             if button == "Right":
-#                 value = 5
-            
-#             s = str(value)
-#             b = s.encode()
-#             bluetooth.write(b)
-#         except KeyboardInterrupt:
-#             print("error")
-#             bluetooth.close()
-
-            # converts the int value to str then enocdes the str value into byte
-            
-        # Recives info from arduino as bytes and decripts it into str value
-        # RXD = (bluetooth.readline()).strip().decode("utf-8")
-        # print(RXD)
-
 
 class tkinterApp(Tk):
     # __init__ function for class tkinterApp
